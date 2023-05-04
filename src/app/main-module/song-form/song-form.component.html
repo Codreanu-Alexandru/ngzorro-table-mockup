@@ -1,0 +1,78 @@
+<div class="form-container">
+    <form nz-form [formGroup]="songForm" class="login-form">
+        <nz-form-item>
+            <nz-form-control nzErrorTip="Please enter a title">
+                <nz-input-group nzPrefixIcon="title">
+                    <input *ngIf="!song" type="text" nz-input formControlName="title" placeholder="Ttitle" />
+                    <input *ngIf="song" type="text" nz-input formControlName="title" [placeholder]="song!.title" />
+                </nz-input-group>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-control nzErrorTip=" Please enter the album.">
+                <nz-input-group nzPrefixIcon="album">
+                    <input *ngIf="!song" type="text" nz-input formControlName="album" placeholder="Album" />
+                    <input *ngIf="song" type="text" nz-input formControlName="album" [placeholder]="song!.album" />
+                </nz-input-group>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-control>
+                <nz-input-group nzPrefixIcon="duration">
+                    <input *ngIf="!song" type="text" nz-input formControlName="duration" placeholder="Duration" />
+                    <input *ngIf="song" type="text" nz-input formControlName="duration"
+                        [placeholder]="song!.duration" />
+                </nz-input-group>
+                <!--
+                    <div *ngIf="duration.errors?.['notAValidNumber']">
+                        What you entered is not a number!
+                    </div>
+                    <div *ngIf="duration.errors?.['ContainsCharacters']">
+                        Duration must be a number!
+                    </div>
+                -->
+            </nz-form-control>
+        </nz-form-item>
+        <div class="artists-container">
+            <nz-form-item>
+                <nz-form-control nzErrorTip="Please enter at least one artist.">
+                    <div *ngIf="song">
+                        <div *ngFor="let artist of song?.artists">{{artist}}</div>
+                    </div>
+                    <div formArrayName="artists">
+                        <div *ngFor="let artist of artists.controls; let i=index" [formGroupName]="i">
+                            <nz-input-group nzPrefixIcon="artits">
+                                <input type="text" nz-input formControlName="name" placeholder="Artist {{ i + 1 }}" />
+                                <button nz-button nzType="dashed" (click)="artists.removeAt(i)"
+                                    *ngIf="artists.length > 1">Remove</button>
+                            </nz-input-group>
+                        </div>
+                    </div>
+                    <button nz-button nzType="dashed" (click)="addArtist()">Add Artist</button>
+                </nz-form-control>
+            </nz-form-item>
+        </div>
+        <nz-form-item>
+            <nz-form-control nzErrorTip="Please enter the genra.">
+                <nz-input-group nzPrefixIcon="genres">
+                    <input *ngIf="!song" type="text" nz-input formControlName="genres" placeholder="Genres" />
+                    <input *ngIf="song" type="text" nz-input formControlName="genres" [placeholder]="song!.genres" />
+                </nz-input-group>
+            </nz-form-control>
+        </nz-form-item>
+    </form>
+    <div>
+        <button nz-button nzType="primary" class="button" (click)="addSong()">
+            Save
+        </button>
+        <button nz-button nzType="default" class="button" (click)="closeModal()">
+            Close
+        </button>
+    </div>
+    <div *ngIf="added" class="greenText">
+        Song added succesfully
+    </div>
+    <div *ngIf="rejected" class="redText">
+        Invalid input
+    </div>
+</div>

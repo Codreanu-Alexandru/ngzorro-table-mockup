@@ -1,0 +1,39 @@
+<div class="button-holder">
+    <button nz-button nzType="primary" class="add-button" (click)="OpenAddDialog()">
+        <span nz-icon nzType="plus-square" nzTheme="outline"></span>
+        <span>Add Song</span>
+    </button>
+</div>
+
+<div class="main-container">
+    <nz-table id="main-table" #basicTable [nzData]="CurrentSongs" [nzFrontPagination]="true" [nzShowPagination]="false">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Album</th>
+                <th>Duration</th>
+                <th>artists</th>
+                <th>Genres</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of basicTable.data">
+                <td>{{ data.title }}</td>
+                <td>{{ data.album }}</td>
+                <td>{{ durationConverter.transform(data.duration) }}</td>
+                <!--WHY CAN'T I USE THIS PIPE AS A PIPE??? WHY DO I GET A MAXIMUM STACK LIMIT REACHED ERROR?-->
+                <td>{{ artistsEnumerator.transform(data.artists)}}</td>
+                <td>{{ data.genres }}</td>
+                <td>
+                    <button nz-button nzType="default" (click)="OpenEditDialog(data)">
+                        <span nz-icon nzType="edit" nzTheme="outline"></span>
+                    </button>
+                    <!-- Put icon here-->
+                </td>
+            </tr>
+        </tbody>
+    </nz-table>
+    <nz-pagination id="main-table-pagination" [nzPageSize]="8" [nzTotal]="allSongs.length" [nzShowSizeChanger]="false"
+        (nzPageIndexChange)="onPageIndexChanged($event)"></nz-pagination>
+</div>

@@ -1,0 +1,18 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+}
+
+#main-table {
+    min-height: 80vh;
+    margin-bottom: 0px;
+}
+
+#main-table-pagination {
+    align-self: flex-end;
+}
+
+.button-holder {
+    padding: 25px;
+}

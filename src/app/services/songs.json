@@ -1,0 +1,177 @@
+[
+  {
+    "title": "Cause For Concern",
+    "album": "Are You Alright?",
+    "duration": 202,
+    "artists": ["LoveJoy"],
+    "genres": "Indie Rock"
+  },
+  {
+    "title": "One Day",
+    "album": "Are You Alright?",
+    "duration": 144,
+    "artists": ["LoveJoy"],
+    "genres": "Indie Rock"
+  },
+  {
+    "title": "Oh Yeah, You Gonna Cry?",
+    "album": "Pebble Brain",
+    "duration": 169,
+    "artists": ["LoveJoy"],
+    "genres": "Indie Rock"
+  },
+  {
+    "title": "Call Me What You Like",
+    "album": "Call Me What You Like",
+    "duration": 226,
+    "artists": ["LoveJoy"],
+    "genres": "Indie Rock"
+  },
+  {
+    "title": "Alien Blues",
+    "album": "Gawk",
+    "duration": 155,
+    "artists": ["Vundabar"],
+    "genres": "Indie Rock"
+  },
+  {
+    "title": "Halcyon Age",
+    "album": "Angel Youth",
+    "duration": 193,
+    "artists": ["Vansire"],
+    "genres": "Bedroom Pop"
+  },
+  {
+    "title": "The Latter Teens",
+    "album": "After Fillmore Country",
+    "duration": 221,
+    "artists": ["Vansire"],
+    "genres": "Bedroom Pop"
+  },
+  {
+    "title": "japan",
+    "album": "japan",
+    "duration": 174,
+    "artists": ["Yot Club"],
+    "genres": "Indie Rock"
+  },
+  {
+    "title": "Remember When",
+    "album": "Nothing Happens",
+    "duration": 156,
+    "artists": ["Wallons"],
+    "genres": "Indie Rock"
+  },
+  {
+    "title": "Le Châtea",
+    "album": "Rikki",
+    "duration": 155,
+    "artists": ["Ginger Root"],
+    "genres": "Indie Pop"
+  },
+  {
+    "title": "Evening Light",
+    "album": "The Modern Western World",
+    "duration": 130,
+    "artists": ["Vansire", "FLOOR CRY"],
+    "genres": "Bedroom Pop"
+  },
+  {
+    "title": "I Love You So",
+    "album": "I Love You So",
+    "duration": 160,
+    "artists": ["The Walters"],
+    "genres": "Lo-fi Indie"
+  },
+  {
+    "title": "Wozwald",
+    "album": "Wazwald",
+    "duration": 292,
+    "artists": ["Yuu Miyashita", "NILFRUITS"],
+    "genres": "J-Pop"
+  },
+  {
+    "title": "Favorite Poison",
+    "album": "Favorite Poison",
+    "duration": 192,
+    "artists": ["Fuller"],
+    "genres": "Indie Rock"
+  },
+  {
+    "title": "i wanna know",
+    "album": "i wanna know",
+    "duration": 81,
+    "artists": ["tea"],
+    "genres": "Lo-fi Indie"
+  },
+  {
+    "title": "I Hate Myself",
+    "album": "I Hate Myself",
+    "duration": 177,
+    "artists": ["P.H.F."],
+    "genres": "Indie Rock"
+  },
+  {
+    "title": "Apocalypse",
+    "album": "Cigarettes After Sex",
+    "duration": 290,
+    "artists": ["Cigarettes After Sex"],
+    "genres": "Bedroom Acustic"
+  },
+  {
+    "title": "ゾッコン",
+    "album": "Ark with a Line",
+    "duration": 243,
+    "artists": ["Mono no Aware"],
+    "genres": "J-Pop"
+  },
+  {
+    "title": "Something About You",
+    "album": "Mullholland Drive",
+    "duration": 153,
+    "artists": ["Eyedress", "Dent May"],
+    "genres": "Indie Pop"
+  },
+  {
+    "title": "Full Of Empty",
+    "album": "Party Mode",
+    "duration": 231,
+    "artists": ["The Black Quare"],
+    "genres": "Lo-fi Indie"
+  },
+  {
+    "title": "Yoru ni Tokeru",
+    "album": "Yoru ni Tokeru",
+    "duration": 341,
+    "artists": ["Kai Akala"],
+    "genres": "J-indie"
+  },
+  {
+    "title": "Hard to Love Reflections",
+    "album": "Hard to Love Reflections",
+    "duration": 170,
+    "artists": ["J.Y.N."],
+    "genres": "Indie Rock"
+  },
+  {
+    "title": "Fantasy Gardan",
+    "album": "Fantasy Gardan",
+    "duration": 192,
+    "artists": ["Jacob Maul"],
+    "genres": "Indie Pop"
+  },
+  {
+    "title": "Run the World!!!",
+    "album": "Fuzzybrain",
+    "duration": 176,
+    "artists": ["Dayglow"],
+    "genres": "Indie Pop"
+  },
+  {
+    "title": "i Feel bad",
+    "album": "I Hate Myself Becuase",
+    "duration": 98,
+    "artists": ["I Hate Myself Becuase"],
+    "genres": "Lo-fi Indie"
+  }
+]
